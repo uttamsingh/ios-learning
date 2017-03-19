@@ -88,7 +88,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="t1T-RF-E6u">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="svn-fg-aGo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="svn-fg-aGo">
+                            <connections>
+                                <segue destination="osE-eR-Pbe" kind="push" id="Phx-o6-JB4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="024-dC-oUM" id="RFw-Xc-Oz6"/>
@@ -106,16 +110,17 @@
             </objects>
             <point key="canvasLocation" x="660.5" y="136.5"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Tip Settings-->
         <scene sceneID="9F2-og-wgD">
             <objects>
-                <viewController id="osE-eR-Pbe" customClass="SettingsViewController" customModule="tipcalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tip Settings" id="osE-eR-Pbe" customClass="SettingsViewController" customModule="tipcalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9E-pK-o0q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Qt8-M1-E0U"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aN1-FX-ND4" userLabel="First Responder" sceneMemberID="firstResponder"/>
